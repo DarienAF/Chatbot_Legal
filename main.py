@@ -19,7 +19,7 @@ def root():
 @app.get("/test_busqueda")
 def test_busqueda(
     q: str = Query(..., description="Consulta legal para buscar en el corpus"),
-    k: int = Query(3, description="Número de fragmentos que se retornarán")
+    k: int = 3
 ):
     """
     Endpoint de prueba: recibe una consulta 'q', busca en el corpus legal
