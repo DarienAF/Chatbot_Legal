@@ -1,15 +1,10 @@
 from fastapi import FastAPI, Query
 from utils.search_engine import BuscadorLegal
-# from dotenv import load_dotenv
-# from utils.generator import generar_respuesta_legal
 
-
-# AI API LLAMA3 from Together.AI (generator.py)
-# load_dotenv()
-
+# Instancia de la aplicacion web
 app = FastAPI(title="LegalBot Semántico")
 
-# Instancia el buscador al iniciar
+# Instancia del buscador al iniciar
 buscador = BuscadorLegal(corpus_path='legal_corpus')
 
 @app.get("/")
@@ -26,9 +21,10 @@ def test_busqueda(
     y genera una respuesta en lenguaje natural.
     """
     resultados = buscador.buscar(q, k)
+    umbral = 0.8
 
-    # Verifica si hay resultados significativos
-    if not resultados:
+    #Verifica si todos los resultados significativos
+    if not all(resultado["distancia"] <= umbral for resultado in resultados[:3]):
         return {
             "consulta": q,
             "top_k": k,
@@ -36,13 +32,9 @@ def test_busqueda(
             "disclaimer": "Este asistente no sustituye asesoramiento legal profesional."
         }
 
-    # Genera respuesta usando LLM
-   # respuesta_generada = generar_respuesta_legal(resultados, q)
-
     return {
         "consulta": q,
         "top_k": k,
         "resultados": resultados,
-        #"respuesta_generada": respuesta_generada,
         "disclaimer": "Este asistente no sustituye asesoramiento legal profesional."
     }
