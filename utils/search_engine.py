@@ -15,7 +15,7 @@ class BuscadorLegal:
 
     def buscar(self, query: str, k: int = 3) -> list[dict]:
         """
-        Dada una consulta de usuario, devuelve los k párrafos más relevantes.
+        Dada una consulta de usuario, devuelve los k parrafos más relevantes.
         """
         # Genera embedding de la consulta
         from sentence_transformers import SentenceTransformer

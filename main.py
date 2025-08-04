@@ -21,13 +21,14 @@ def test_busqueda(
     y genera una respuesta en lenguaje natural.
     """
     resultados = buscador.buscar(q, k)
-    umbral = 0.8
+    umbral = 1.0
 
     #Verifica si todos los resultados significativos
     if not all(resultado["distancia"] <= umbral for resultado in resultados[:3]):
         return {
             "consulta": q,
             "top_k": k,
+            "resultados": resultados,
             "mensaje": "No se encontró información relevante en el corpus.",
             "disclaimer": "Este asistente no sustituye asesoramiento legal profesional."
         }
