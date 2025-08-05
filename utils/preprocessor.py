@@ -7,8 +7,8 @@ embed_model = SentenceTransformer(EMBED_MODEL_NAME)
 
 def cargar_corpus(path: str = 'legal_corpus'):
     """
-    Lee todos los archivos .md o .txt en la carpeta,
-    los trocea en párrafos y devuelve listas de textos y sus fuentes.
+    Lectura de todos los archivos .md en la carpeta
+    se segmentan en trozos los parrafos y devuelve listas de textos y sus fuentes
     """
     textos = []
     fuentes = []
@@ -18,7 +18,7 @@ def cargar_corpus(path: str = 'legal_corpus'):
             continue
         with open(full_path, encoding='utf-8') as f:
             contenido = f.read()
-        # Dividir por doble salto de línea; ajusta según tu corpus
+        # Dividir por doble salto de linea
         trozos = [t.strip() for t in contenido.split('\n\n') if t.strip()]
         textos.extend(trozos)
         fuentes.extend([fname] * len(trozos))
@@ -26,7 +26,7 @@ def cargar_corpus(path: str = 'legal_corpus'):
 
 def vectorizar_textos(textos: list[str]):
     """
-    Dado un listado de textos, retorna sus embeddings en un numpy array.
+    Dado un listado de textos, retorna sus embeddings en un numpy array
     """
     embeddings = embed_model.encode(
         textos,

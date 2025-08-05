@@ -3,104 +3,66 @@ Principios
 
 ## ARTÍCULO 1 Objetivo.
 El derecho a vivienda digna y adecuada es inherente a todo ser humano. El Estado tiene el deber de posibilitar la realización de este derecho.
-
 Inspirada en los principios de libertad, justicia y equidad y reconociendo la necesidad de armonizar el ejercicio del derecho de propiedad con el desarrollo económico y el interés social, esta ley se propone dictar las normas para regular las relaciones jurídicas originadas en el arrendamiento de locales para vivienda y otros destinos.
-
 
 # CAPÍTULO II
 Ambito de la ley
 
 ## ARTÍCULO 2 Imperatividad.
 Esta ley es de orden público.
-
 Todo convenio contrario a sus disposiciones imperativas o prohibitivas es nulo de pleno derecho y se tendrá por no escrito. El acuerdo de partes es válido ante las disposiciones permisivas o facultativas de esta ley o en ausencia de norma expresa, de no ser que el pacto viole otra disposición imperativa o prohibitiva del ordenamiento jurídico costarricense
-
 
 ## ARTÍCULO 3 Irrenunciabilidad de derechos.
 Los derechos conferidos en esta ley a los arrendatarios son irrenunciables.
-
 La nulidad de pleno derecho de las estipulaciones que contengan renuncias a los derechos de los arrendatarios, no afecta la validez del resto de la contratación.
-
 
 ## ARTÍCULO 5 Destino ilegal.
 El destino para el cual se arrienda un inmueble no puede ser contrario a las leyes ni atentar contra la seguridad, la salud, el bienestar o la tranquilidad públicas.
-
 Es nulo de pleno derecho el contrato o la estipulación que contravenga esta norma.
-
 
 ## ARTÍCULO 6 Estado, entes descentralizados y municipalidades.
 El Estado, los entes públicos descentralizados y las municipalidades, en calidad de arrendadores o arrendatarios, están sujetos a esta ley, salvo disposición expresa de su propio ordenamiento jurídico.
-
 El procedimiento de licitación se rige por las disposiciones legales y reglamentarias de la contratación administrativa.
-
 
 ## Artículo 7 Inaplicabilidad de la ley.
 Se excluyen del ámbito de aplicación de esta ley:
-
 Los hoteles, las pensiones, las hospederías, los internados y los establecimientos similares, en cuanto a los usuarios de sus servicios.
-
 Las viviendas y los locales con fines turísticos, ubicados en zonas aptas para ese destino, según los califique el Instituto Costarricense de Turismo, mediante resolución motivada, siempre que se alquilen por temporadas. Esa resolución se publicará en el diario oficial.
-
 Las ocupaciones temporales de espacios y puestos en mercados y ferias o con ocasión de festividades.
-
 La ocupación de espacios destinados al estacionamiento o la guarda de vehículos, excepto si se vinculan con el arrendamiento de un local.
-
 El arriendo de espacios publicitarios.
-
 El comodato o la simple ocupación precaria o por pura tolerancia de un bien inmueble edificado. El comodatario u ocupante no modifica su calidad por el hecho de abonar los consumos de acueducto, alcantarillado, electricidad y otros que se deriven del uso del bien, aunque haya registrado a su nombre esos servicios.
-
 El uso de viviendas, locales u oficinas asignados a administradores, encargados, porteros, guardas, peones, empleados y funcionarios por razón del cargo que desempeñan o del servicio que prestan, aunque deban abonar los consumos de acueducto, alcantarillado, electricidad u otros servicios derivados del uso del bien o porque se haya convenido el uso del bien como remuneración en especie.
-
 Los contratos en que, al arrendarse una finca con casa de habitación, la finalidad primordial sea el aprovechamiento agrícola, pecuario o forestal del predio. Estos contratos se regirán por lo dispuesto en la legislación aplicable sobre arrendamientos rústicos.
-
 
 # CAPÍTULO III
 Contratacion
 
-
 ## Artículo 8 El arrendamiento.
 Existe arrendamiento o locación cuando dos partes se obligan recíprocamente, la una a conceder el uso y goce temporal de una cosa y la otra a pagar un precio cierto y determinado.
-
 Quien cede el uso y goce de la cosa se denomina arrendador o locador y el que paga el precio, arrendatario, locatario o inquilino. El precio se llama alquiler o renta.
-
 
 ## Artículo 9 Facultad de dar.
 Pueden dar en arriendo el propietario, el poseedor del bien por cualquier título legítimo, siempre y cuando no sea el de arrendamiento, y quien actúe en el ejercicio de un poder especial o generalísimo o de una facultad legalmente conferida por autoridad competente.
-
 El copropietario de una cosa indivisa no puede arrendarla sin el consentimiento de los demás partícipes.
-
 La contravención a estas normas producirá la nulidad del contrato, con derecho a la reparación por daños y perjuicios.
-
 
 ## Artículo 10 Facultad de recibir.
 Puede tomar en arriendo todo el que posea capacidad jurídica o esté legalmente representado.
-
 Para tomar en arriendo a nombre de un tercero se requiere poder especial o generalísimo o tener el ejercicio de una facultad legalmente conferida por autoridad competente.
-
 En el arrendamiento, son de aplicación las prohibiciones contenidas en el artículo 1068 del Código Civil o las de cualquier otra disposición legal imperativa. La contravención a estas normas producirá la nulidad del contrato, con derecho a la reparación por daños y perjuicios.
-
 
 ## Artículo 11 Contenido del contrato.
 En los contratos de arrendamiento escritos, el documento deberá contener, por lo menos, las siguientes estipulaciones:
-
 Nombres, calidades y personerías del arrendador y del arrendatario.
-
-Cita de inscripción, en el Registro Público, del inmueble objeto del contrato. Si el bien no está inscrito, el contrato mencionará el documento fehaciente donde conste el derecho de propiedad o de posesión. Además, se indicará la ubicación exacta del inmueble.
-
-Descripción detallada del inmueble arrendado y sus instalaciones, servicios, accesorios y espacios sin construir incorporados al arrendamiento, el estado de conservación de los bienes y, en su caso, los vicios o defectos que acompañan la cosa.
-
-Descripción individualizada de otros muebles no fungibles que las partes convengan incluir en la contratación, con sus características, numeración, estado de conservación y cualquier otro signo útil para identificarlos.
-
-Mención expresa del destino específico al que se dedicará el inmueble arrendado.
-
-Monto del precio del arrendamiento o alquiler, lugar donde se pagará y forma de pago.
-
+- Cita de inscripción, en el Registro Público, del inmueble objeto del contrato. Si el bien no está inscrito, el contrato mencionará el documento fehaciente donde conste el derecho de propiedad o de posesión. Además, se indicará la ubicación exacta del inmueble.
+- Descripción detallada del inmueble arrendado y sus instalaciones, servicios, accesorios y espacios sin construir incorporados al arrendamiento, el estado de conservación de los bienes y, en su caso, los vicios o defectos que acompañan la cosa.
+- Descripción individualizada de otros muebles no fungibles que las partes convengan incluir en la contratación, con sus características, numeración, estado de conservación y cualquier otro signo útil para identificarlos.
+- Mención expresa del destino específico al que se dedicará el inmueble arrendado.
+- Monto del precio del arrendamiento o alquiler, lugar donde se pagará y forma de pago.
 Plazo del arrendamiento.
-
 Domicilios que las partes señalan para las notificaciones.
-
 Otras cláusulas convenientes para los contratantes, en concordancia con lo dispuesto en esta ley.
-
 Fecha del contrato.
 
 

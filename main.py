@@ -1,5 +1,8 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Form, Query
+from fastapi.responses import PlainTextResponse
+from twilio.twiml.messaging_response import MessagingResponse
 from utils.search_engine import BuscadorLegal
+from utils.twilio_utils import send_message  # función que envía mensajes via Twilio
 
 # Instancia de la aplicacion web
 app = FastAPI(title="LegalBot Semántico")
@@ -39,3 +42,65 @@ def test_busqueda(
         "resultados": resultados,
         "disclaimer": "Este asistente no sustituye asesoramiento legal profesional."
     }
+
+@app.post("/message")
+async def whatsapp_webhook(
+    Body: str = Form(...),
+    From: str = Form(...)
+):
+    resultados = buscador.buscar(Body, k=3)
+    umbral = 0.8
+
+    relevantes = [r for r in resultados if r["distancia"] <= umbral]
+
+    if not relevantes:
+        respuesta = (
+            "⚖️ LegalBot:\n\n"
+            "No se encontró información relevante sobre tu consulta. "
+            "Intentá reformularla.\n\n"
+            "🛑 Este asistente no sustituye asesoramiento legal profesional."
+        )
+    else:
+        partes = [f"• {r['texto']}" for r in relevantes]
+        respuesta = (
+            "⚖️ LegalBot:\n\n" +
+            "\n\n".join(partes) +
+            "\n\n🛑 Este asistente no sustituye asesoramiento legal profesional."
+        )
+
+    twiml = MessagingResponse()
+    twiml.message(respuesta)
+    return PlainTextResponse(str(twiml), media_type="application/xml")
+
+# Webhook para WhatsApp (POST desde Twilio)
+"""
+@app.post("/message")
+async def whatsapp_webhook(
+    Body: str = Form(...),
+    From: str = Form(...)
+):
+    # Procesar consulta y obtener resultados
+    resultados = buscador.buscar(Body, k=3)
+
+    if not resultados:
+        respuesta = (
+            "No se encontró información relevante. "
+            "Intentá reformular tu consulta."
+        )
+    else:
+        items = [f"• {r['texto']} (Fuente: {r['fuente']})" for r in resultados]
+        respuesta = "\n\n".join(items)
+
+    # Enriquecer mensaje con encabezado opcional
+    header = "⚖️ LegalBot:\n\n"
+    full_message = header + respuesta
+
+    # TwiML para responder al webhook Twilio
+    twiml = MessagingResponse()
+    twiml.message(full_message)
+
+    # Además, usá tu función utilitaria para enviar por la API REST, si preferís:
+    # send_message(to_number=From, body_text=full_message)
+
+    return PlainTextResponse(str(twiml), media_type="application/xml")
+"""
