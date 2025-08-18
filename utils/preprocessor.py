@@ -26,7 +26,7 @@ def cargar_corpus(path: str = 'legal_corpus'):
 
 def vectorizar_textos(textos: list[str]):
     """
-    Dado un listado de textos, retorna sus embeddings en un numpy array
+    Dado un listado de textos sw retorna sus embeddings en un numpy array
     """
     embeddings = embed_model.encode(
         textos,
