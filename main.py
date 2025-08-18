@@ -2,7 +2,7 @@ from fastapi import FastAPI, Form, Query
 from fastapi.responses import PlainTextResponse
 from twilio.twiml.messaging_response import MessagingResponse
 from utils.search_engine import BuscadorLegal
-from utils.twilio_utils import send_message  # función que envía mensajes via Twilio
+from utils.twilio_utils import send_message 
 
 # Instancia de la aplicacion web
 app = FastAPI(title="LegalBot Semántico")
@@ -48,7 +48,7 @@ async def whatsapp_webhook(
     Body: str = Form(...),
     From: str = Form(...)
 ):
-    resultados = buscador.buscar(Body, k=3)
+    resultados = buscador.buscar(Body, k=5)
     umbral = 0.8
 
     relevantes = [r for r in resultados if r["distancia"] <= umbral]
