@@ -4,7 +4,7 @@ from twilio.twiml.messaging_response import MessagingResponse
 from utils.search_engine import BuscadorLegal
 from collections import Counter
 # from utils.twilio_utils import send_message  # función que envía mensajes via Twilio
-
+#last update
 # Instancia de la aplicacion web
 app = FastAPI(title="LegalBot Semántico")
 

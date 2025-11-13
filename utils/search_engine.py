@@ -34,3 +34,4 @@ class BuscadorLegal:
             'distancia': round(float(dist), 4)  # mayor legibilidad
         })
         return resultados
+        #Last update
